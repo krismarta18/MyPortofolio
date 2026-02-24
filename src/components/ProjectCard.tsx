@@ -23,9 +23,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <div className="flex items-start justify-between gap-3">
         <h3 className="text-base font-semibold text-zinc-950 dark:text-zinc-50">{project.title}</h3>
         <div className="flex shrink-0 flex-wrap items-center justify-end gap-2">
-          {typeof project.year === "number" ? (
+          {typeof project.image.year === "number" ? (
             <span className="rounded-full border border-black/10 bg-black/5 px-2.5 py-1 text-xs text-zinc-700 dark:border-white/10 dark:bg-black/20 dark:text-zinc-200">
-              {project.year}
+              {project.image.year}
             </span>
           ) : null}
           <span className="rounded-full border border-black/10 bg-black/5 px-2.5 py-1 text-xs text-zinc-700 dark:border-white/10 dark:bg-black/20 dark:text-zinc-200">
